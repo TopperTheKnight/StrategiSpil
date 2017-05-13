@@ -59,6 +59,10 @@ namespace StrategiSpil
             // TODO: Add your initialization logic here
             colliders = new List<Collider>();
             collidersToRemove = new List<Collider>();
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 680;
+            graphics.ApplyChanges();
+            this.IsMouseVisible = true;
             base.Initialize();
         }
 
@@ -70,7 +74,20 @@ namespace StrategiSpil
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Map.Instance.GenerateMap(new int[,] 
+            {
+                {1,1,1,1,1,1,0,2,0,1,1,1,1,1,1,},
+                {1,1,1,1,1,1,4,4,4,1,1,1,1,1,1,},
+                {3,3,1,1,1,1,0,2,0,1,1,1,1,3,3,},
+                {3,3,3,1,1,1,0,2,0,1,1,1,3,3,3,},
+                {3,3,3,1,1,1,0,2,0,1,1,1,3,3,3,},
+                {3,3,3,1,1,1,0,2,0,1,1,1,3,3,3,},
+                {3,3,1,1,1,1,0,2,0,1,1,1,1,3,3,},
+                {1,1,1,1,1,1,4,4,4,1,1,1,1,1,1,},
+                {1,1,1,1,1,1,0,2,0,1,1,1,1,1,1,},
+            },1
+            );
+            Map.Instance.LoadContent(Content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -105,7 +122,10 @@ namespace StrategiSpil
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin(SpriteSortMode.BackToFront);
+            Map.Instance.Draw(spriteBatch);
 
+            spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

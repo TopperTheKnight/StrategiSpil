@@ -43,15 +43,12 @@
   <ItemGroup>
     <Compile Include="Classes\Animation.cs" />
     <Compile Include="Classes\Components\Animator.cs" />
-    <Compile Include="Classes\Components\Bullet.cs" />
     <Compile Include="Classes\Components\Collider.cs" />
     <Compile Include="Classes\Components\Component.cs" />
-    <Compile Include="Classes\Components\Enviorment.cs" />
     <Compile Include="Classes\Components\GameObject.cs" />
-    <Compile Include="Classes\Components\Player.cs" />
     <Compile Include="Classes\Components\SpriteRenderer.cs" />
     <Compile Include="Classes\Components\Transform.cs" />
-    <Compile Include="Classes\Components\UIElement.cs" />
+    <Compile Include="Classes\Components\Unit.cs" />
     <Compile Include="Classes\Interfaces\IAnimateable.cs" />
     <Compile Include="Classes\Interfaces\ICollider.cs" />
     <Compile Include="Classes\Interfaces\IDrawable.cs" />
@@ -60,6 +57,8 @@
     <Compile Include="Classes\Interfaces\IStrategy.cs" />
     <Compile Include="Classes\Interfaces\IUpdateable.cs" />
     <Compile Include="Classes\GameWorld.cs" />
+    <Compile Include="Classes\Map\Map.cs" />
+    <Compile Include="Classes\Map\Terrain.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

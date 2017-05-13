@@ -8,6 +8,6 @@ namespace StrategiSpil
 {
     interface IStrategy
     {
-        void Execute(Direction direction);
+        void Execute();
     }
 }
