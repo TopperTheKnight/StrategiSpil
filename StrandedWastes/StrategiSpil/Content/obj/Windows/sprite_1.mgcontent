@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/Topps/Documents/Visual Studio 2017/Projects/sourcetree/StrandedWastes/StrategiSpil/Content/sprite_1.png</SourceFile>
-  <SourceTime>2017-05-13T16:57:36+02:00</SourceTime>
+  <SourceTime>2017-05-13T23:25:04.0675457+02:00</SourceTime>
   <DestFile>C:/Users/Topps/Documents/Visual Studio 2017/Projects/sourcetree/StrandedWastes/StrategiSpil/Content/bin/Windows/sprite_1.xnb</DestFile>
-  <DestTime>2017-05-13T17:01:32.0334077+02:00</DestTime>
+  <DestTime>2017-05-14T13:40:34.7164619+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
